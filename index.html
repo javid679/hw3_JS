@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css" />
+    <title>My journal</title>
+  </head>
+  <body>
+    <h1>My Journal</h1>
+
+    <!--Navigation bar -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Old Entries</a></li>
+          <li><a href="music.html">Music</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--journal entry area-->
+    <main class="main">
+      <div class="container">
+        <div class="col1">
+          <label for="story">Tell us your story:</label>
+          <!--Journal date-->
+              <textarea
+                style="background-color: #44403c;"
+                id="txt"
+                rows="10"
+                cols="100"
+                placeholder="What have you done today..."
+                ></textarea>
+            
+        </div>
+        <div class="col2">
+          <label for="start">Choose Date:</label>
+            <input class="dte"
+            type="date"
+            id="start"/>
+     
+            <button class="submit" onclick="abc() ; del()" >submit</button>
+  
+            <!--Uploads-->
+            <label for="avatar" style="padding-top: 45px;">Upload media</label>
+            <input
+              type="file"
+              id="avatar"
+              name="media"
+              value="Upload"
+              accept="image/png, image/jpeg, video/*"
+              multiple
+            /> <!--user should be able to select image here-->
+        </div>
+      </div>
+      
+      <br />
+      <br />
+      
+      <!--Display  the last three entries-->
+    <h2>Recent Entries</h2>
+        <br />
+        <section>
+            <ul class="entries" id="entryUL">
+                <li class="entrylist" id="entryLi">
+                    <p class="content" id="entryPara">
+                        Raindrops are fallin' on my head And just like the guy whose feet
+                        Are too big for his bed Nothin' seems to fit Those raindrops are
+                        fallin' on my head They keep fallin'.
+                        So I just did me some talkin' to the sun And I said I didn't like
+                        The way he got things done Sleepin' on the job Those raindrops are
+                        fallin' on my head They keep fallin'.
+                        
+                    </p>
+                    <span id="datePicker"> #date# </span>
+                </li>
+             </ul>
+        </section> 
+      </div>
+    </main>
+    <!--Script Link-->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+  <footer>2023 My Journal</footer>
+</html>

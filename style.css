@@ -1,0 +1,132 @@
+* {
+  margin: 20;
+  padding: 0;
+  font-family: sono, Helvetica;
+}
+
+body {
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header a {
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #b2dfdb;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+
+label[for="story"] {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*Main section
+.main {
+  display: grid;
+  grid-template-columns: 244px 1fr;
+  gap: 48px;
+} */
+
+/* container css */
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 75px;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 13.5 px;
+  margin-left: 10px;
+  padding-top: 25px;
+}
+
+button {
+  color: black;
+}
+
+input[type="date"] {
+  width: 100px;
+  margin-top: 45 px;
+}
+
+.submit {
+  width: 105px;
+  color: black;
+  background-color: white;
+}
+
+textarea {
+  background-color: #f2f2f2; /* change to desired background color */
+  border-radius: 5px; /* change to desired border radius */
+  padding: 10px; /* add some padding for better appearance */
+  border: none; /* remove the default border */
+}
+
+textarea::placeholder {
+  color: yellow;
+}
+
+/*recent entries */
+
+.entries {
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer section */
+footer {
+  background-color: wheat;
+  color: black;
+  text-align: center;
+  padding: 0px;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  margin: 0;
+}
+
+/*defining recent entries */
+.entrylist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #44403c;
+  border-radius: 16px;
+  padding: 6px 24px;
+  margin-bottom: 16px;
+}

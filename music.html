@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iTunes Music Data</title>
+  </head>
+  <body>
+    <h1>iTunes Music Data</h1>
+    <div id="music-list"></div>
+
+    <script>
+      const apiUrl =
+        "https://itunes.apple.com/search?term=taylor+swift&entity=song";
+      const musicList = document.getElementById("music-list");
+
+      fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          data.results.forEach((music) => {
+            const musicItem = document.createElement("div");
+            musicItem.innerHTML = `<h3>${music.trackName}</h3>
+                                    <p>${music.artistName}</p>
+                                    <audio controls src="${music.previewUrl}"></audio>`;
+            musicList.appendChild(musicItem);
+          });
+        })
+        .catch((error) => console.error(error));
+    </script>
+  </body>
+</html>
